@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+public class maytinh {
+    public static void main(String[] args) {
+        double num1;
+        double num2;
+        char pheptinh;
+        double ketqua;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("nhap so 1");// nhap so 1
+        num1 = scanner.nextDouble();// gan gia tri
+        System.out.println("nhap so 2");// nhap so 2
+        num2=scanner.nextDouble();// nhap gia tri
+
+        System.out.println("Nhap phep tinh (+,-,*,/,%)");// n
+        pheptinh=scanner.next().charAt(0);// nhap gia tri tu ban phim(next) va lay ki tu dau tien (chartAt) cua gia tri vua nhap gan vao bien phep tinh
+        switch(pheptinh) {
+            case '+':
+                ketqua = num1 + num2;// bieu thuc cong hai so
+                break;
+            case '-':
+                ketqua = num1 - num2;// bieu thuc tru hai so
+                break;
+            case '*':
+                ketqua = num1 * num2;// bieu thuc nhan hai so
+                break;
+            case '/':
+                ketqua = num1 / num2;// bieu thuc chia hai so
+                break;
+            case '%':
+                ketqua = num1 % num2;// bieu thuc chia hai so lay phan du
+                break;
+            default:
+                System.out.println("Phép tính không hợp lệ!");
+                return;
+        }
+
+        System.out.println("Kết quả: " + ketqua); // hien thi ket qua
+    }
+}
+
+
+
+
+
+
+
+
+
