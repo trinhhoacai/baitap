@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class chuyendoitien {
+    public static void main(String[] args) {
+        double vnd = 23000;
+        double usd;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("nhap so tien");// nhap va gan gia tri
+        usd = scanner.nextDouble();
+        double quydoi = usd * 23000;// bieu thuc chuyen doi tien
+        System.out.println("Gia tri Vnd="+quydoi);// hien thi so tien chuan theo bieu thuc quydoi
+    }
+}
